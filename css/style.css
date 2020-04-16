@@ -259,12 +259,21 @@ img {
   align-items: center;
 }
 .details {
+  text-align: center;
   font-size: .9rem;
   color: #6e6462;
-  padding: 5px;
+  padding: 30px;
+  margin-top: 30px;
+  font-weight: lighter;
 }
 
 
+
+.details span {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
 
 .skills {
     height: 350px;
@@ -287,28 +296,8 @@ img {
     margin: 30px 15px;
   
 }
-.dreams {
-    height: 350px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-    background-color: rgba(255, 255, 255, .5);
-     margin: 30px 15px;
-}
-.dreams_pic {
-  justify-content: center;
-    align-content: center;
-    align-items: flex-start;
-  background: url(../images/dreams.jpg) no-repeat center center;
-  background-size: cover;
-    width: 30%;
-    height: 350px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 200px;
-    margin: 30px 15px;
-  
-}
+
+
 .contact_pic {
   justify-content: center;
     align-content: center;
@@ -331,7 +320,7 @@ form {
   margin: 20px;
   
 }
-.forms {
+#contactform {
   align-items: flex-start;
   width: 70%;
 }
@@ -374,7 +363,7 @@ textarea {
     font-weight: 200;
 
 }
-.submit {
+#btn {
   width: 20%;
   height: 30px;
   background: #BCD5E0;

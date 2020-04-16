@@ -47,19 +47,47 @@
          <h1>Hello!</h1>
       </div>
       <div class="about">
-         <p> I enjoy crafting digital experiences.
+         <p> I am a creative thinker, designer, and determined technocrat with a "swiss knife" set of skills.
          </p>
+      </div>
+   </section>
+    <!-- skills -->
+    <section id="services">
+      <div class="skills_pic">
+         <h1>Skills</h1>
+      </div>
+      <div class="skills">
+         <p>Design - <br/>
+            Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Adobe XD</p>
+         <p>Web Development - <br/>
+            HTML, CSS, Materialize, Bootstrap, Skeleton, Javascript, Ruby, Rails, EJS, Express, MongoDB</p>
+         
+
       </div>
    </section>
    <!-- projects -->
    <section id="projects">
       <div class="all-projects">
+         <div class="project proj-3">
+            <div class="proj-img">
+               <a href="https://artt-app-client.herokuapp.com/"><img src="./images/project3.png"></a>
+            </div>
+            <div class="proj-details">
+                  <p class="details">
+                     <span>Development & Design</span> <br> Around the Table is based on the simple idea that most cherished family stories are usually told around the table. The main purpose of the app is to make family connections easy.<br> Technologies used: React.js, Parallax.js, Materialize, Ruby on Rails.</p>
+                     
+
+
+            </div>
+         </div>
          <div class="project proj-1">
             <div class="proj-img">
                <a href="https://mutescuirina.github.io/"><img src="./images/project1.png"></a>
             </div>
             <div class="proj-details">
-                  <p class="details">Javascript, Jquery, Giphy API, HTML and CSS</p>
+                  <p class="details">
+                     <span>Development & Design</span> <br>Mood Pacifier is a playful app. Just type anything nobody is watching... and try it out. The purpose of the Mood Pacifier app is to make the user smile. <br>Technologies used: JavaScript, jQuery, Giphy API, HTML and CSS.</p>
+                     
               
             </div>
          </div>
@@ -69,47 +97,35 @@
                <a href="https://dockit-06880.herokuapp.com/dockit/"><img src="./images/project2.png"></a>
             </div>
             <div class="proj-details">
-                  <p class="details">Node.js, Express, JSX, EJS, MongoDB Skeleton</p>
-            
-
+                     
+               <div class="proj-details">
+                  <p class="details">
+                     <span>Development & Design</span> <br>Dockit is an app that creates the perfect environment for a busy student-athlete who wants to keep track of their training. Technologies used: Express.js, Node.js, EJS, MongoDB, Mongoose, Skeleton.</p>
+              
+            </div>
 
             </div>
          </div>
-         <div class="project proj-3">
-            <div class="proj-img">
-               <a href="https://artt-app-client.herokuapp.com/"><img src="./images/project3.png"></a>
-            </div>
-            <div class="proj-details">
-                  <p class="details">Ruby, Rails, JSX, React, Materialize</p>
-
-
-            </div>
-         </div>
+         
    </section>
-   <!-- skills -->
-   <section id="services">
-      <div class="skills_pic">
-         <h1>Skills</h1>
-      </div>
-      <div class="skills">
-         <p>Web Development - <br/>
-         Javascript, Ruby, Rails, EJS, Express, MongoDB, HTML, CSS, Materialize, Skeleton</p>
-         <p>Design - <br/>
-            Adobe Illustrator, Adobe InDesign, Adobe Photoshop</p>
-
-      </div>
-   </section>
+   <!-- contact form -->
    <section id="contact">
       <div class="contact_pic">
          <h1 id="aspirations">Contact</h1>
       </div>
       <div class="skills">
-         <form action="https://formspree.io/acsirina@gmail.com" method="POST">
-            <input type="text" class="name-form" placeholder='Name' name='name'>
-            <input type="text" class="email-form" placeholder='Email' name='email'>
-            <textarea type="text" class="message" name='Message' placeholder='Message'></textarea>
-            <input type="submit" value="send" name='submit' class="submit">
-         </form>
+         <form  id="contactform" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="_replyto" placeholder="Email">
+            <input type="hidden" name="_subject" value="Website contact" />
+            <textarea name="message" placeholder="..."></textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input  id="btn"type="submit" value="Send">
+        </form>
+        <script>
+            var contactform =  document.getElementById('contactform');
+            contactform.setAttribute('action', '//formspree.io/' + 'mutescuirina' + '@' + 'gmail' + '.' + 'com');
+        </script>
       </div>
    </section>
    <footer>
